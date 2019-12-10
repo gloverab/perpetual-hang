@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Alatsi', sans-serif;
+  color: #17241A;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#banner-img {
+  width: 100%;
+  height: auto;
+}
+
+.coming-soon-wrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 10vh
+}
+
+.coming-soon {
+  font-size: 30px;
+  margin: 24px;
+}
+
+.etsy-button {
+  text-decoration: none;
+  color: #17241A;
+  position: relative;
+  display: inline-block;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 100%;
+  transition: .3s ease;
+  max-width: 100%;
+}
+
+.visit-on-etsy {
+  font-size: 24px;
+  width: 100%;
+  top: 10px;
+  margin-top: 10px;
+  display: block;
+}
+
+.etsy-logo {
+  width: 250px;
+  height: auto;
+}
+
+.etsy-button:hover {
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, .2);
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-family: sans-serif;
+  font-size: 12px;
+  text-align: center;
+  padding: 5px;
+}
