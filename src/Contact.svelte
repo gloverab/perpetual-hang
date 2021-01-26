@@ -1,5 +1,4 @@
 <style>
-
   .section {
     display: flex;
     padding-bottom: 100px;
@@ -181,12 +180,33 @@
   input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
       width: 100%;
   }
+
+  @media screen and (max-width: 475px) {
+        h2 {
+            margin-left: 0;
+        }
+
+        .line {
+            display: none;
+        }
+
+        .section {
+            flex-direction: column-reverse;
+        }
+
+        .img-wrapper {
+            padding: 0;
+        }
+
+        .form-wrapper {
+            padding: 0;
+        }
+    }
 </style>
 
 
 <h2>Hit me up!</h2>
 <div class='line' />
-
 
 <div class='section' id='contact'>
 

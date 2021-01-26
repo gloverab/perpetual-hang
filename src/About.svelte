@@ -51,6 +51,24 @@
   .flex-photo {
     flex: 3;
   }
+
+  @media screen and (max-width: 475px) {
+    .section {
+      padding: 24px 15px;
+    }
+
+    .info-container {
+      flex-direction: column-reverse;
+    }
+
+    img {
+      border-radius: 6px;
+    }
+
+    .flex-text {
+      margin-right: 0;
+    }
+  }
 </style>
 
 <div class='section' id='about'>

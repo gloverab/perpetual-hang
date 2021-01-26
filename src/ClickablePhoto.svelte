@@ -27,7 +27,6 @@
 		box-sizing: border-box;
 		position: absolute;
 		display: flex;
-		/* flex-direction: column; */
 		align-items: flex-end;
 		justify-content: flex-end;
 		width: 100%;
@@ -61,6 +60,7 @@
 		color: var(--primary-dark);
 		font-size: 16px;
 		width: 30%;
+		min-width: 120px;
 	}
 	
 	a:hover {
@@ -69,7 +69,31 @@
   
   a:hover .overlay {
     opacity: 1;
-  }
+	}
+	
+	@media screen and (max-width: 475px) {
+		a.image-wrapper {
+			box-sizing: border-box;
+			width: 100%;
+			overflow: hidden;
+			flex-shrink: 0;
+			flex: none;
+		}
+
+		.overlay {
+			opacity: 1;
+		}
+
+		.overlay-text {
+			display: none;
+			font-size: 18px;
+			width: 100%;
+		}
+
+		.cta-span {
+			/* width: 120px; */
+		}
+	}
 </style>
 
 <a href={linkTo} class='image-wrapper img-1' target='blank'>

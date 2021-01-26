@@ -40,6 +40,7 @@
 				imgSrc='https://i.etsystatic.com/21824466/r/il/cbfd60/2390402037/il_1588xN.2390402037_8b0b.jpg'
 				linkTo='https://www.etsy.com/in-en/listing/818720467/two-tier-golden-hanger-long-with?ref=shop_home_active_18'
 			/>
+			<div class='h-spacer' />
 		</div>
 	</div>
 	<About />
@@ -78,8 +79,22 @@
 		background: transparent;  /* Optional: just make scrollbar invisible */
 	}
 
-	@media screen and (min-width: 640px) {
-		
+	.h-spacer {
+		width: 1px;
+		flex-shrink: 0;
+	}
 
+	@media screen and (max-width: 475px) {
+		main {
+			padding-top: 72px;
+		}
+
+		.images-wrapper {
+			height: calc(100vh - 72px);
+		}
+
+		.info-wrapper {
+			padding: 15px;
+		}
 	}
 </style>
